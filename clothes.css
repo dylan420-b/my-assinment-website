@@ -1,4 +1,3 @@
-/* Reset and base styles */
 body {
     font-family: Arial, sans-serif;
     color: #333;
@@ -9,14 +8,12 @@ body {
     text-align: center; /* Centers all text by default */
 }
 
-/* Header styles */
 header {
     background-color: #FFFFFF;
     color: #301934;
     padding: 20px;
 }
 
-/* Main container */
 .container {
     max-width: 1200px;
     margin: 0 auto; /* Horizontally centers the container */
