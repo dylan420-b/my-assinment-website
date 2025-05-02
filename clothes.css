@@ -5,11 +5,11 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    text-align: center; /* Centers all text by default */
+    text-align: center;
 }
 
 header {
     background-color: #FFFFFF;
     color: #301934;
-    padding: 20px;
+    padding:0px;
 }
