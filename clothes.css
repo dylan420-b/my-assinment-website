@@ -1,3 +1,4 @@
+/* Reset and base styles */
 body {
     font-family: Arial, sans-serif;
     color: #333;
@@ -5,14 +6,55 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
+    text-align: center; /* Centers all text by default */
 }
 
+/* Header styles */
 header {
     background-color: #FFFFFF;
     color: #301934;
-    padding: 20px; /* Added padding value */
-    text-align: center;
-} /* Added missing closing brace */
-
+    padding: 20px;
 }
 
+/* Main container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto; /* Horizontally centers the container */
+    padding: 20px;
+}
+
+/* Navigation */
+.main-nav {
+    margin: 20px 0;
+}
+.main-nav a {
+    margin: 0 15px; /* Spacing between links */
+    color: #301934;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* About section */
+.about {
+    margin: 40px 0;
+}
+.about p {
+    max-width: 600px;
+    margin: 20px auto; /* Centers paragraph */
+}
+
+/* Shop Now button */
+.cta-button {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #301934;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+.cta-button:hover {
+    background-color: #4a2a5a; /* Darker purple on hover */
+}
