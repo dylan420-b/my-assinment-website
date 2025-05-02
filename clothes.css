@@ -16,31 +16,28 @@ header {
 
 .container {
     max-width: 1200px;
-    margin: 0 auto; /* Horizontally centers the container */
+    margin: 0 auto;
     padding: 20px;
 }
 
-/* Navigation */
 .main-nav {
     margin: 20px 0;
 }
 .main-nav a {
-    margin: 0 15px; /* Spacing between links */
+    margin: 0 15px;
     color: #301934;
     text-decoration: none;
     font-weight: bold;
 }
 
-/* About section */
 .about {
     margin: 40px 0;
 }
 .about p {
     max-width: 600px;
-    margin: 20px auto; /* Centers paragraph */
+    margin: 20px auto;
 }
 
-/* Shop Now button */
 .cta-button {
     display: inline-block;
     padding: 12px 30px;
@@ -53,5 +50,5 @@ header {
     transition: background-color 0.3s;
 }
 .cta-button:hover {
-    background-color: #4a2a5a; /* Darker purple on hover */
+    background-color: #4a2a5a;
 }
