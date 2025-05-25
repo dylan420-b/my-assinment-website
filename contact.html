@@ -1,17 +1,193 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Contact</title>
-  <link rel="stylesheet" href="clothes.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | GlowBite</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-  <header>
-    <h1><a href="index.html">Food to eat now</h1>
-     <nav>
-            <a href="index.html">Home</a>
-     </nav>
+  <header class="header">
+    <div class="container">
+      <div class="header-inner">
+        <h1 class="logo">Glow<span>Bite</span></h1>
+        <button class="menu-toggle" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+            <li><a href="#" class="reservation-btn">Reservations</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
   </header>
-  <main>
-    Feel free to contact us
-  </main>
+
+  <section class="contact-hero">
+    <div class="container">
+      <h2>We'd Love to Hear From You</h2>
+      <p>Connect with our team for reservations, inquiries, or just to say hello</p>
+    </div>
+  </section>
+
+  <section class="contact-section">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-form">
+          <h3 class="section-title">Send Us a Message</h3>
+          <form id="contactForm" action="#" method="post">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" required>
+              <i class="fas fa-user"></i>
+            </div>
+            
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" required>
+              <i class="fas fa-envelope"></i>
+            </div>
+            
+            <div class="form-group">
+              <label for="phone">Phone Number (Optional)</label>
+              <input type="tel" id="phone" name="phone">
+              <i class="fas fa-phone"></i>
+            </div>
+            
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <select id="subject" name="subject">
+                <option value="reservation">Reservation Inquiry</option>
+                <option value="general">General Question</option>
+                <option value="feedback">Feedback</option>
+                <option value="private-event">Private Events</option>
+                <option value="other">Other</option>
+              </select>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            
+            <div class="form-group">
+              <label for="message">Your Message</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+              <i class="fas fa-pencil-alt"></i>
+            </div>
+            
+            <button type="submit" class="btn-primary">
+              <span class="btn-text">Send Message</span>
+              <i class="fas fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+        
+        <div class="contact-info">
+          <div class="info-card">
+            <h3><i class="fas fa-map-marker-alt"></i> Visit Us</h3>
+            <p>123 Culinary Street<br>Gourmet City, GC 12345</p>
+            <a href="#" class="map-link">View on Map <i class="fas fa-external-link-alt"></i></a>
+          </div>
+          
+          <div class="info-card">
+            <h3><i class="fas fa-clock"></i> Hours</h3>
+            <ul class="hours-list">
+              <li><span>Monday - Thursday:</span> 11am - 10pm</li>
+              <li><span>Friday - Saturday:</span> 11am - 11pm</li>
+              <li><span>Sunday:</span> 10am - 9pm</li>
+            </ul>
+          </div>
+          
+          <div class="info-card">
+            <h3><i class="fas fa-phone-alt"></i> Contact</h3>
+            <p>Reservations: <a href="tel:+15551234567">(555) 123-4567</a></p>
+            <p>Email: <a href="mailto:hello@glowbite.com">hello@glowbite.com</a></p>
+            
+            <div class="social-links">
+              <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="map-section">
+    <div class="container">
+      <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.215256751343!2d-73.9878449242391!3d40.74844097138946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDQ0JzU0LjQiTiA3M8KwNTknMDkuOSJX!5e0!3m2!1sen!2sus!4v1620000000000!5m2!1sen!2sus" 
+                width="100%" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <section class="team-cta">
+    <div class="container">
+      <div class="team-card">
+        <img src="images/contact-smile.jpg" alt="Friendly GlowBite staff">
+        <div class="team-content">
+          <h3>Meet Our Team</h3>
+          <p>Our dedicated staff is ready to make your dining experience unforgettable. Whether you have special requests or dietary needs, we're here to help.</p>
+          <a href="about.html" class="btn-secondary">Learn About Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>GlowBite</h4>
+          <p>Crafting memorable dining experiences with passion and creativity since 2015.</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <p>123 Culinary Street<br>Gourmet City, GC 12345</p>
+          <p>Phone: (555) 123-4567</p>
+          <p>Email: hello@glowbite.com</p>
+        </div>
+        <div class="footer-col">
+          <h4>Hours</h4>
+          <p>Monday - Thursday: 11am - 10pm</p>
+          <p>Friday - Saturday: 11am - 11pm</p>
+          <p>Sunday: 10am - 9pm</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 GlowBite. All rights reserved. <span>Crafted with <i class="fas fa-heart"></i> and taste.</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="notification" id="formNotification">
+    <p>Thank you for your message! We'll get back to you soon.</p>
+    <button class="close-notification">&times;</button>
+  </div>
 </body>
+</html>
